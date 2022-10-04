@@ -51,6 +51,10 @@ a:hover{
   color: #EAF6F6;
 }
 
+.title{
+  background-color: #E4F9F5;
+}
+
 .topcontainer{
   background-color: #E4F9F5;
   position: relative;
@@ -84,25 +88,6 @@ a:hover{
   position: absolute;
   left: 200px;
   bottom: 300px;
-}
-
-.skill-row{
-  width: 50%;
-  text-align: center;
-  margin: 100px auto 100px auto;
-  text-align: left;
-}
-
-.Code-image{
-  width: 40%;
-  float: left;
-  margin-right: 30px;
-}
-
-.Sketch-image{
-  width: 40%;
-  float: right;
-  margin-left: 30px;
 }
 
 .copyright{
@@ -142,70 +127,55 @@ a:hover{
   padding-top: 50px;
 }
 
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
-
-.wrapper {
-  max-width: 650px;
-  margin: 16px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-
-.item figure {
+.flip-card-inner {
   position: relative;
-  perspective: 400px;
-}
-
-.back, .front {
-  backface-visibility: hidden;
-  transition: transform 800ms 150ms;
-  will-change: transform;
-}
-
-.item:hover .front,
-.item:focus .front {
-  transform: rotatey(180deg);
-  transition: transform 400ms;
-  will-change: transform;
-}
-.item:hover .back,
-.item:focus .back {
-  transform: rotatey(0deg);
-  transition: transform 400ms;
-  will-change: transform;
-}
-
-.item img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-.item .back {
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
-  color: white;
-  font-family: sans-serif;
-  font-size: 0.875rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: black;
-  transform: rotatey(-180deg);
-  padding-right: 100px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #EAF6F6;
+  color: #11999E;
+}
+
+.flip-card-back {
+  background-color: #66BFBF;
+  color: #E4F9F5;
+  transform: rotateY(180deg);
+  line-height: 40px;
+  font-size: 1.5rem;
+}
+
+
+#Skills{
+  padding: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-box{
+  padding: 3% 2%;
 }

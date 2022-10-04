@@ -12,18 +12,41 @@
 
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+
 
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
 
   <!-- Nav bar -->
+  <section class="title">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
 
 
   <div class="topcontainer">
@@ -36,78 +59,116 @@
     <img src="https://web.archive.org/web/20180819202235/http://seanhalpin.io/assets/img/content/home/masthead/land.svg">
   </div>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img src="C:/Users/kales/Downloads/Shriya image-modified.png" alt="Profile Photo">
-      <h2>Hello...</h2>
-      <p class="intro">I am pursuing Btech from <a href="https://www.coep.org.in/">COEP Tech University</a>. I am from Computer Engineering Department. I am a Web Development enthusiast.</p>
-    </div>
-    <hr>
-
-    <div class="skills">
-      <h2>My Skills</h2>
-      <div class="skill-row">
-        <img class="Code-image" src="https://cdn-icons-png.flaticon.com/256/6485/6485828.png" alt="Code image">
-        <h3>Web Development ⭐⭐</h3>
-        <p>I have just started learning Web Development. </p>
-      </div>
-      <div class="skill-row">
-        <img class="Sketch-image" src="C:/Users/kales/Downloads/Sketch-modified.JPEG" alt="Drawing image">
-        <h3>Sketching ⭐⭐⭐⭐</h3>
-        <p>I started learning to sketch since I was 10 years old. Over time, I have gained a wealth of experience in sketching. </p>
+  <section id="About">
+    <div class="middle-container">
+      <div class="profile">
+        <img src="C:/Users/kales/Downloads/Shriya image-modified.png" alt="Profile Photo">
+        <h2>Hello...</h2>
+        <p class="intro">I am pursuing Btech from <a href="https://www.coep.org.in/">COEP Tech University</a>. I am from Computer Engineering Department. I am a Web Development enthusiast.</p>
       </div>
     </div>
     <hr>
+  </section>
 
 
 
-    <!-- contact section-->
+  <section id="Skills">
+    <h2>My Skills</h2>
+    <div class="row">
+      <div class="skill-box col-lg-4 col-md-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://cdn-icons-png.flaticon.com/256/6485/6485828.png" alt="Code image" style="width:300px;height:300px;">
+              <h3>Web Development ⭐⭐</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>I have just started learning Web Development. Till now I have learnt HTML, CSS and BOOTSTRAP.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-box col-lg-4 col-md-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="C:/Users/kales/Downloads/Sketch-modified.JPEG" alt="Drawing image" style="width:300px;height:300px;">
+              <h3>Sketching ⭐⭐⭐⭐</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>I started learning to sketch since I was 10 years old. Over time, I have gained a wealth of experience in sketching.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-box col-lg-4 col-md-6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://t3.ftcdn.net/jpg/02/67/05/94/240_F_267059410_mY7tszKOsDyb1ql8fgQ3zmp3IxCQQWJ3.jpg" alt="Code image" style="width:300px;height:300px;">
+              <h3>Playing Badminton ⭐⭐⭐</h3>
+            </div>
+            <div class="flip-card-back">
+              <p> During my leisure time I love to play badminton. I have played inter-school badminton matches too in my school days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr />
+  </section>
+
+
+
+  <!-- contact section-->
+
+  <section id="contact">
     <div class="contact-me">
       <h2>Get In Touch</h2>
       <h3>Love to sketch as much as I do?</h3>
       <p>Let's learn more about it together! We can code together too!</p>
     </div>
-
-    <section id="contact">
-      <div class="container-fluid">
-         <div class="row">
-          <div class="col-lg-6">
-            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
-              <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
-                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Ghanshyam+Nagar,+Saturna,+Amravati&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                </iframe>
-              </div>
-              <a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="grab-maps-authorization">premium bootstrap themes</a>
-              <style>
-                #embed-map-canvas img {
-                  max-width: none !important;
-                  background: none !important;
-                  font-size: inherit;
-                  font-weight: inherit;
-                }
-              </style>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+            <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
+              <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Ghanshyam+Nagar,+Saturna,+Amravati&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+              </iframe>
             </div>
+            <a class="embedded-map-code" href="https://www.bootstrapskins.com/themes" id="grab-maps-authorization">premium bootstrap themes</a>
+            <style>
+              #embed-map-canvas img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
           </div>
-          <div class="col-lg-6" details>
-            <form action="/action_page.php" method="get" target="_blank">
-              <label for="fname">Name:</label>
+        </div>
+        <div class="col-lg-6" details>
+          <form action="/action_page.php" method="get" target="_blank">
+            <label for="fname">Name:</label>
+            <input type="text"><br><br>
+            <label for="lname">Email:</label>
+            <input type="text"><br><br>
+            <label for="lname">Subject:</label>
+            <input type="text"><br><br>
+            <div class="mb-3 mt-3">
+              <label for="lname">Project Details:</label>
               <input type="text"><br><br>
-              <label for="lname">Email:</label>
-              <input type="text"><br><br>
-              <label for="lname">Subject:</label>
-              <input type="text"><br><br>
-              <div class="mb-3 mt-3">
-                <label for="lname">Project Details:</label>
-                <input type="text"><br><br>
-              </div>
-            </form>
-            <a class="btn">CONTACT ME</a>
-          </div>
-          </div>
+            </div>
+          </form>
+          <a class="btn">CONTACT ME</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-   </div>
 
 
 
@@ -119,57 +180,7 @@
   </div>
 
 
-  <ul class="wrapper">
-    <li class="item card">
-      <a href="/">
-        <figure>
-          <div class="front">
-            <h3>Web Development ⭐⭐</h3>
-            <img class="Code-image" src="https://cdn-icons-png.flaticon.com/256/6485/6485828.png" alt="Code image">
-          </div>
-          <figcaption class="back">
-            I have just started
-            <span class="photographer">
-              learning Web Development.
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
-    <li class="item">
-      <a href="/">
-        <figure>
-          <div class="front">
-            <h3>Sketching ⭐⭐⭐⭐</h3>
-
-            <img class="Sketch-image" src="C:/Users/kales/Downloads/Sketch-modified.JPEG" alt="Drawing image">
-          </div>
-          <figcaption class="back">
-            I started learning to sketch since I was 10 years old.
-
-            <span class="photographer">
-              Over time, I have gained a wealth
-               of experience in sketching.
-            </span>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
-  </ul>
 
 </body>
 
 </html>
-
-
-
-<!--<div class="col-lg-6">
-   form fields
-   <form>
-    <input type="text" class="form-control form-control-lg" placeholder="Name">
-    <input type="email" class="form-control mt-3" placeholder="Email">
-    <input type="text" class="form-control mt-3" placeholder="Subject">
-    <div class="mb-3 mt-3">
-      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-    </div>
-  </form>-->
